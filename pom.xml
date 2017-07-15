@@ -1,0 +1,116 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.dickanirwansyah.springboot</groupId>
+  <artifactId>springboot-employee</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>springboot-employee</name>
+  <url>http://maven.apache.org</url>
+  
+  <!--parent-->
+  <parent>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-parent</artifactId>
+      <version>1.5.4.RELEASE</version>
+  </parent>
+  
+  <dependencies>
+      
+      <!--dependencies spring-boot starter actuator-->
+      <dependency>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-actuator</artifactId>
+      </dependency>
+      
+      <!--dependencies spring-boot starter JPA-->
+      <dependency>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-data-jpa</artifactId>
+      </dependency>
+      
+      <!--dependencies spring-boot strater tomcat-->
+      <dependency>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-tomcat</artifactId>
+          <scope>provided</scope>
+      </dependency>
+      
+      <!--dependencies spring-boot starter web-->
+      <dependency>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-web</artifactId>
+      </dependency>
+      
+      <!--dependencies spring-boot starter-test-->
+      <dependency>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-test</artifactId>
+          <scope>test</scope>
+      </dependency>
+      
+      <!--mysql connector java-->
+      <dependency>
+          <groupId>mysql</groupId>
+          <artifactId>mysql-connector-java</artifactId>
+          <scope>runtime</scope>
+      </dependency>
+      
+      <!--Java Standar Tage Library JSTL-->
+      <dependency>
+          <groupId>javax.servlet</groupId>
+          <artifactId>jstl</artifactId>
+      </dependency>
+      
+      <!--Compile Jsp-->
+      <dependency>
+          <groupId>org.apache.tomcat.embed</groupId>
+          <artifactId>tomcat-embed-jasper</artifactId>
+          <scope>provided</scope>
+      </dependency>
+      
+      <!--Compile Jsp-->
+      <dependency>
+          <groupId>org.eclipse.jdt.core.compiler</groupId>
+          <artifactId>ecj</artifactId>
+          <version>4.6.1</version>
+          <scope>provided</scope>
+      </dependency>
+      
+      <!--dependencies hibernate entity manager-->
+      <dependency>
+          <groupId>org.hibernate</groupId>
+          <artifactId>hibernate-entitymanager</artifactId>
+      </dependency>
+      
+      <!--dependencies apache tiles-->
+      <dependency>
+          <groupId>org.apache.tiles</groupId>
+          <artifactId>tiles-core</artifactId>
+          <version>3.0.7</version>
+      </dependency>
+      
+      <!--dependencies apache tiles-->
+      <dependency>
+          <groupId>org.apache.tiles</groupId>
+          <artifactId>tiles-jsp</artifactId>
+          <version>3.0.7</version>
+      </dependency>
+      
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <!--build-->
+  <build>
+      <plugins>
+          <plugin>
+              <groupId>org.springframework.boot</groupId>
+              <artifactId>spring-boot-maven-plugin</artifactId>
+          </plugin>
+      </plugins>
+  </build>
+</project>

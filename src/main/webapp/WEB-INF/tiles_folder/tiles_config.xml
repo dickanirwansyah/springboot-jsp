@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+<tiles-definitions>
+    
+    <definition name="home.index" template="/WEB-INF/jsp/template/index.jsp">
+        <put-attribute name="content" value="/WEB-INF/jsp/home/index.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="divisi.index" template="/WEB-INF/jsp/template/index.jsp">
+        <put-attribute name="content" value="/WEB-INF/jsp/divisi/index.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="employee.index" template="/WEB-INF/jsp/template/index.jsp">
+        <put-attribute name="content" value="/WEB-INF/jsp/employee/index.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="divisi.update" template="/WEB-INF/jsp/template/index.jsp">
+        <put-attribute name="content" value="/WEB-INF/jsp/divisi/update.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="employee.insert" template="/WEB-INF/jsp/template/index.jsp">
+        <put-attribute name="content" value="/WEB-INF/jsp/employee/insert.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="employee.update" template="/WEB-INF/jsp/template/index.jsp">
+        <put-attribute name="content" value="/WEB-INF/jsp/employee/update.jsp"></put-attribute>
+    </definition>
+    
+</tiles-definitions>
+
